@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centralizar verticalmente</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 96vh;
+            background-color: red;
+            padding: 10px;
+
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;  /*tamanho*/
+          
+
+
+            position:absolute;  /* la ta "relativo", e so pode mexer com left, top  etc... no "absolute" */
+            left: 50%;
+            top: 50%;
+            height: 200px;
+            width: 400px;
+            background-color: yellowgreen;
+
+            transform:translate(-50%, -50%);    /* centralizou; negativo (left, top) e positivo (right e bottom) */
+
+        }
+       
+    </style>
+</head>
+<body>
+    <!--Sempre quer for 'centralizar verticalmente' tem que ter um container e um conteudo-->
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
